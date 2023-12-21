@@ -17,19 +17,19 @@
  **/
 
  // Creating the widget
-class wpb_widget extends WP_Widget {
+class ue_latest_questions_widget extends WP_Widget {
  
 	function __construct() {
 	parent::__construct(
 	 
 	// Base ID of your widget
-	'wpb_widget', 
+	'ue_latest_questions_widget', 
 	 
 	// Widget name will appear in UI
-	__('WPBeginner Widget', 'wpb_widget_domain'), 
+	__('UserEcho Latest Questions Widget', 'ue_latest_questions_domain'), 
 	 
 	// Widget description
-	array( 'description' => __( 'Sample widget based on WPBeginner Tutorial', 'wpb_widget_domain' ), )
+	array( 'description' => __( 'Widget to display Latest Questions from a UserEcho category', 'ue_latest_questions_domain' ), )
 	);
 	}
 	 
@@ -44,7 +44,7 @@ class wpb_widget extends WP_Widget {
 	echo $args['before_title'] . $title . $args['after_title'];
 	 
 	// This is where you run the code and display the output
-	echo __( 'Hello, World!', 'wpb_widget_domain' );
+	echo __( 'Hello, World!', 'ue_latest_questions_domain' );
 	echo $args['after_widget'];
 	}
 	 
